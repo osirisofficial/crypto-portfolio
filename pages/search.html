@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assests/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+      integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>crypto marketplace | Manas</title>
+    <script defer src="../assests/js/global.js"></script>
+    <script defer src="../assests/js/search.js"></script>
+  </head>
+  <body id="dark-theme">
+    <div class="main">
+      <div class="global">
+        <p>Coins:<b id="count-coins">15039</b></p>
+        <p>Exchanges: <b id="count-exchange">1169</b></p>
+        <p>
+          Market Cap:
+          <span
+            ><b id="marketCap">$2.297T</b>
+            <span id="marketCapChange">
+              -4.9% <i class="ri-arrow-down-s-fill"></i></span
+          ></span>
+        </p>
+        <p>24H Vol: <b id="volume"></b>N/A</p>
+        <p>Dominance: <b id="dominance">N/A</b></p>
+      </div>
+      <nav>
+        <div class="left-section">
+          <a href="#" id="logo">Logo.</a>
+          <div class="nav-links">
+            <a href="../index.html" id="home">Home</a>
+            <a href="./charts.html" id="charts"> charts</a>
+            <a href="/pages/search" id="search" class="active">search</a>
+            <a href="/pages/aboutus" id="about">About US</a>
+          </div>
+        </div>
+        <div class="right-section">
+          <form class="search" id="searchForm">
+            <i class="ri-search-line"></i>
+            <input
+              type="text"
+              placeholder="search for an assests...."
+              required
+              autocomplete="off"
+              id="formInput"
+            />
+          </form>
+          <i id="theme-toggle" class="ri-sun-line"></i>
+        </div>
+      </nav>
+      <div class="search-main">
+        <h1 class="searchHeading">Search result for "bit"</h1>
+        <div class="search-container">
+          <div class="item" id="assests">
+            <h3>assests results...</h3>
+            <div id="assets-container"></div>
+          </div>
+          <div class="item" id="exchanges">
+            <h3>exchanges results...</h3>
+            <div id="exchanges-container"></div>
+          </div>
+          <div class="item" id="ntfs">
+            <h3>NTFs results...</h3>
+            <div id="ntfs-container"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

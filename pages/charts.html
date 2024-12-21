@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assests/css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+      integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>crypto marketplace | Manas</title>
+    <script defer src="../assests/js/charts.js"></script>
+    <script defer src="../assests/js/global.js"></script>
+    <script defer src="../assests/js/search.js"></script>
+  </head>
+  <!---->
+  <body id="dark-theme">
+    <div class="main">
+      <div class="global">
+        <p>Coins:<b id="count-coins">15039</b></p>
+        <p>Exchanges: <b id="count-exchange">1169</b></p>
+        <p>
+          Market Cap:
+          <span
+            ><b id="marketCap">$2.297T</b>
+            <span id="marketCapChange"
+              >-4.9% <i class="ri-arrow-down-s-fill"></i></span
+          ></span>
+        </p>
+        <p>24H Vol: <b id="volume"></b>N/A</p>
+        <p>Dominance: <b id="dominance">N/A</b></p>
+      </div>
+      <nav>
+        <div class="left-section">
+          <a href="#" id="logo">Logo.</a>
+          <div class="nav-links">
+            <a href="../index.html" id="home">Home</a>
+            <a href="/pages/charts.html" id="charts" class="active">charts</a>
+            <a href="./search.html" id="search">search</a>
+            <a href="/pages/aboutus" id="about">About US</a>
+          </div>
+        </div>
+        <div class="right-section">
+          <form class="search" id="searchForm">
+            <i class="ri-search-line"></i>
+            <input
+              type="text"
+              placeholder="search for an assests...."
+              required
+              autocomplete="off"
+            />
+          </form>
+          <i id="theme-toggle" class="ri-sun-line"></i>
+        </div>
+      </nav>
+      <div class="charts-container">
+        <div class="tradingview-widget-container" id="chart-widget"></div>
+      </div>
+    </div>
+  </body>
+</html>

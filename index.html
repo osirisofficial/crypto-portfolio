@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assests/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+      integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>crypto marketplace | Manas</title>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"
+    ></script>
+    <script defer src="./assests/js/global.js"></script>
+    <script defer src="./assests/js/script.js"></script>
+    <script defer src="assests/js/search.js"></script>
+  </head>
+  <body id="dark-theme">
+    <div class="main">
+      <div class="global">
+        <p>Coins:<b id="count-coins">15039</b></p>
+        <p>Exchanges: <b id="count-exchange">1169</b></p>
+        <p>
+          Market Cap:
+          <span
+            ><b id="marketCap">$2.297T</b>
+            <span id="marketCapChange"
+              >-4.9% <i class="ri-arrow-down-s-fill"></i></span
+          ></span>
+        </p>
+        <p>24H Vol: <b id="volume"></b></p>
+        <p>Dominance: <b id="dominance">N/A</b></p>
+      </div>
+      <nav>
+        <div class="left-section">
+          <a href="#" id="logo">Logo.</a>
+          <div class="nav-links">
+            <a href="index.html" id="home" class="active">Home</a>
+            <a href="./pages/charts.html" id="charts">charts</a>
+            <a href="./pages/search.html" id="search">search</a>
+            <a href="./pages/aboutus" id="about">About US</a>
+          </div>
+        </div>
+        <div class="right-section">
+          <form class="search" id="searchForm">
+            <i class="ri-search-line"></i>
+            <input
+              type="text"
+              placeholder="search for an assests...."
+              required
+              autocomplete="off"
+              id="formInput"
+            />
+          </form>
+          <i id="theme-toggle" class="ri-sun-line"></i>
+        </div>
+      </nav>
+      <div class="trending">
+        <div id="trending-header"><h1>Trending, Crypto</h1></div>
+        <div class="coin-warper">
+          <div class="coin-header">
+            <h3>Trending Coins</h3>
+            <i class="ri-arrow-right-s-line"></i>
+          </div>
+          <div class="coin-container-main">
+            <div class="btn-left btn" id="coin-left" style="display: none">
+              <i class="ri-arrow-left-wide-line"></i>
+            </div>
+            <div class="coin-container">
+              <div class="coin-item">
+                <div class="coin-image">
+                  <img src="./assests/image/icons8-bitcoin-48.png" alt="" />
+                </div>
+                <div class="title">
+                  <span class="title-name">Bitcoin</span>
+                  <span class="title-chain">BNB Chain</span>
+                </div>
+                <div class="valueAndChange">
+                  <span class="price-count">5.868.9 <span>usd</span></span>
+                  <span class="volume green">+0.24%</span>
+                </div>
+              </div>
+              <div class="coin-item">
+                <div class="coin-image">
+                  <img src="./assests/image/icons8-bitcoin-48.png" alt="" />
+                </div>
+                <div class="title">
+                  <span class="title-name">Bitcoin</span>
+                  <span class="title-chain">BNB Chain</span>
+                </div>
+                <div class="valueAndChange">
+                  <span class="price-count">5.868.9 <span>usd</span></span>
+                  <span class="volume green">+0.24%</span>
+                </div>
+              </div>
+              <div class="coin-item">
+                <div class="coin-image">
+                  <img src="./assests/image/icons8-bitcoin-48.png" alt="" />
+                </div>
+                <div class="title">
+                  <span class="title-name">Bitcoin</span>
+                  <span class="title-chain">BNB Chain</span>
+                </div>
+                <div class="valueAndChange">
+                  <span class="price-count">5.868.9 <span>usd</span></span>
+                  <span class="volume green">+0.24%</span>
+                </div>
+              </div>
+              <div class="coin-item">
+                <div class="coin-image">
+                  <img src="./assests/image/icons8-bitcoin-48.png" alt="" />
+                </div>
+                <div class="title">
+                  <span class="title-name">Bitcoin</span>
+                  <span class="title-chain">BNB Chain</span>
+                </div>
+                <div class="valueAndChange">
+                  <span class="price-count">5.868.9 <span>usd</span></span>
+                  <span class="volume green">+0.24%</span>
+                </div>
+              </div>
+              <div class="coin-item">
+                <div class="coin-image">
+                  <img src="./assests/image/icons8-bitcoin-48.png" alt="" />
+                </div>
+                <div class="title">
+                  <span class="title-name">Bitcoin</span>
+                  <span class="title-chain">BNB Chain</span>
+                </div>
+                <div class="valueAndChange">
+                  <span class="price-count">5.868.9 <span>usd</span></span>
+                  <span class="volume green">+0.24%</span>
+                </div>
+              </div>
+              <div class="coin-item">
+                <div class="coin-image">
+                  <img src="./assests/image/icons8-bitcoin-48.png" alt="" />
+                </div>
+                <div class="title">
+                  <span class="title-name">Bitcoin</span>
+                  <span class="title-chain">BNB Chain</span>
+                </div>
+                <div class="valueAndChange">
+                  <span class="price-count">5.868.9 <span>usd</span></span>
+                  <span class="volume green">+0.24%</span>
+                </div>
+              </div>
+              <div class="coin-item">
+                <div class="coin-image">
+                  <img src="./assests/image/icons8-bitcoin-48.png" alt="" />
+                </div>
+                <div class="title">
+                  <span class="title-name">Bitcoin</span>
+                  <span class="title-chain">BNB Chain</span>
+                </div>
+                <div class="valueAndChange">
+                  <span class="price-count">5.868.9 <span>usd</span></span>
+                  <span class="volume green">+0.24%</span>
+                </div>
+              </div>
+              <div class="coin-item">
+                <div class="coin-image">
+                  <img src="./assests/image/icons8-bitcoin-48.png" alt="" />
+                </div>
+                <div class="title">
+                  <span class="title-name">Bitcoin</span>
+                  <span class="title-chain">BNB Chain</span>
+                </div>
+                <div class="valueAndChange">
+                  <span class="price-count">5.868.9 <span>usd</span></span>
+                  <span class="volume green">+0.24%</span>
+                </div>
+              </div>
+              <div class="coin-item">
+                <div class="coin-image">
+                  <img src="./assests/image/icons8-bitcoin-48.png" alt="" />
+                </div>
+                <div class="title">
+                  <span class="title-name">Bitcoin</span>
+                  <span class="title-chain">BNB Chain</span>
+                </div>
+                <div class="valueAndChange">
+                  <span class="price-count">5.868.9 <span>usd</span></span>
+                  <span class="volume green">+0.24%</span>
+                </div>
+              </div>
+              <div class="coin-item">
+                <div class="coin-image">
+                  <img src="./assests/image/icons8-bitcoin-48.png" alt="" />
+                </div>
+                <div class="title">
+                  <span class="title-name">Bitcoin</span>
+                  <span class="title-chain">BNB Chain</span>
+                </div>
+                <div class="valueAndChange">
+                  <span class="price-count">5.868.9 <span>usd</span></span>
+                  <span class="volume green">+0.24%</span>
+                </div>
+              </div>
+            </div>
+            <div class="btn-right btn" id="coin-right">
+              <i class="ri-arrow-right-wide-line"></i>
+            </div>
+          </div>
+          <div class="parent" id="coin-loader">
+            <div class="loader">
+              <span class="loader-text">Loading</span>
+              <span class="load"></span>
+            </div>
+          </div>
+        </div>
+        <div class="ntfs-warper">
+          <div class="ntfs-header">
+            <h3>Trending NTFs</h3>
+            <i class="ri-arrow-right-s-line"></i>
+          </div>
+          <div class="ntfs-container-main">
+            <div class="btn-left btn" id="ntfs-left" style="display: none">
+              <i class="ri-arrow-left-wide-line"></i>
+            </div>
+            <div class="ntfs-container">
+              <div class="ntfs-item">
+                <div class="ntfs-image">
+                  <img src="./assests/image/icons8-bitcoin-48.png" alt="" />
+                </div>
+                <div class="title">
+                  <span class="title-name">Bitcoin</span>
+                  <span class="title-chain">BNB Chain</span>
+                </div>
+                <div class="valueAndChange">
+                  <span class="price-count">5.868.9 <span>usd</span></span>
+                  <span class="volume green">+0.24%</span>
+                </div>
+              </div>
+              <div class="ntfs-item">
+                <div class="ntfs-image">
+                  <img src="./assests/image/icons8-bitcoin-48.png" alt="" />
+                </div>
+                <div class="title">
+                  <span class="title-name">Bitcoin</span>
+                  <span class="title-chain">BNB Chain</span>
+                </div>
+                <div class="valueAndChange">
+                  <span class="price-count">5.868.9 <span>usd</span></span>
+                  <span class="volume green">+0.24%</span>
+                </div>
+              </div>
+              <div class="ntfs-item">
+                <div class="ntfs-image">
+                  <img src="./assests/image/icons8-bitcoin-48.png" alt="" />
+                </div>
+                <div class="title">
+                  <span class="title-name">Bitcoin</span>
+                  <span class="title-chain">BNB Chain</span>
+                </div>
+                <div class="valueAndChange">
+                  <span class="price-count">5.868.9 <span>usd</span></span>
+                  <span class="volume green">+0.24%</span>
+                </div>
+              </div>
+              <div class="ntfs-item">
+                <div class="ntfs-image">
+                  <img src="./assests/image/icons8-bitcoin-48.png" alt="" />
+                </div>
+                <div class="title">
+                  <span class="title-name">Bitcoin</span>
+                  <span class="title-chain">BNB Chain</span>
+                </div>
+                <div class="valueAndChange">
+                  <span class="price-count">5.868.9 <span>usd</span></span>
+                  <span class="volume green">+0.24%</span>
+                </div>
+              </div>
+              <div class="ntfs-item">
+                <div class="ntfs-image">
+                  <img src="./assests/image/icons8-bitcoin-48.png" alt="" />
+                </div>
+                <div class="title">
+                  <span class="title-name">Bitcoin</span>
+                  <span class="title-chain">BNB Chain</span>
+                </div>
+                <div class="valueAndChange">
+                  <span class="price-count">5.868.9 <span>usd</span></span>
+                  <span class="volume green">+0.24%</span>
+                </div>
+              </div>
+            </div>
+            <div class="btn-right btn" id="ntfs-right">
+              <i class="ri-arrow-right-wide-line"></i>
+            </div>
+          </div>
+          <div class="parent" id="ntfs-loader">
+            <div class="loader">
+              <span class="loader-text">Loading</span>
+              <span class="load"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabs-container">
+        <div class="tabs">
+          <button class="tab-button active" data-tab="assests">
+            <i class="ri-apps-2-line"></i> Assets
+          </button>
+          <button class="tab-button" data-tab="exchanges">
+            <i class="ri-arrow-left-right-line"></i>
+            Exchanges
+          </button>
+          <button class="tab-button" data-tab="categories">
+            <i class="ri-exchange-2-line"></i> Categories
+          </button>
+          <button class="tab-button" data-tab="holders">
+            <i class="ri-btc-line"></i> Holders
+          </button>
+        </div>
+        <div class="tabs-content" id="assests">
+          <div class="assets-list"></div>
+          <div class="parent hide" id="assests-loader">
+            <div class="loader">
+              <span class="loader-text">Loading</span>
+              <span class="load"></span>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-content hide" id="exchanges">
+          <div class="exchanges-list"></div>
+          <div class="parent hide" id="exchanges-loader">
+            <div class="loader">
+              <span class="loader-text">Loading</span>
+              <span class="load"></span>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-content hide" id="categories">
+          <div class="categories-list">
+            <table>
+              <thead>
+                <th class="table-fixed-column">Company</th>
+                <th>Total BTC</th>
+                <th>Entry Value</th>
+                <th>Total Current Value</th>
+                <th>Total %</th>
+              </thead>
+              <tr>
+                <td class="name-column tabel-fixed-column">
+                  MicroStrategry Inc.
+                </td>
+                <td>226331</td>
+                <td>8330000000</td>
+                <td>14060053580</td>
+                <td class="green">1.078%</td>
+              </tr>
+              <tr>
+                <td class="name-column tabel-fixed-column">
+                  MicroStrategry Inc.
+                </td>
+                <td>226331</td>
+                <td>8330000000</td>
+                <td>14060053580</td>
+                <td class="green">1.078%</td>
+              </tr>
+              <tr>
+                <td class="name-column tabel-fixed-column">
+                  MicroStrategry Inc.
+                </td>
+                <td>226331</td>
+                <td>8330000000</td>
+                <td>14060053580</td>
+                <td class="green">1.078%</td>
+              </tr>
+              <tr>
+                <td class="name-column tabel-fixed-column">
+                  MicroStrategry Inc.
+                </td>
+                <td>226331</td>
+                <td>8330000000</td>
+                <td>14060053580</td>
+                <td class="green">1.078%</td>
+              </tr>
+              <tr>
+                <td class="name-column tabel-fixed-column">
+                  MicroStrategry Inc.
+                </td>
+                <td>226331</td>
+                <td>8330000000</td>
+                <td>14060053580</td>
+                <td class="green">1.078%</td>
+              </tr>
+            </table>
+          </div>
+          <div class="parent hide" id="categories-loader">
+            <div class="loader">
+              <span class="loader-text">Loading</span>
+              <span class="load"></span>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-content hide" id="holders">
+          <div class="holders-list">
+            <table>
+              <thead>
+                <th class="table-fixed-column">Company</th>
+                <th>Total BTC</th>
+                <th>Entry Value</th>
+                <th>Total Current Value</th>
+                <th>Total %</th>
+              </thead>
+              <tr>
+                <td class="name-column tabel-fixed-column">
+                  MicroStrategry Inc.
+                </td>
+                <td>226331</td>
+                <td>8330000000</td>
+                <td>14060053580</td>
+                <td class="green">1.078%</td>
+              </tr>
+              <tr>
+                <td class="name-column tabel-fixed-column">
+                  MicroStrategry Inc.
+                </td>
+                <td>226331</td>
+                <td>8330000000</td>
+                <td>14060053580</td>
+                <td class="green">1.078%</td>
+              </tr>
+              <tr>
+                <td class="name-column tabel-fixed-column">
+                  MicroStrategry Inc.
+                </td>
+                <td>226331</td>
+                <td>8330000000</td>
+                <td>14060053580</td>
+                <td class="green">1.078%</td>
+              </tr>
+              <tr>
+                <td class="name-column tabel-fixed-column">
+                  MicroStrategry Inc.
+                </td>
+                <td>226331</td>
+                <td>8330000000</td>
+                <td>14060053580</td>
+                <td class="green">1.078%</td>
+              </tr>
+              <tr>
+                <td class="name-column tabel-fixed-column">
+                  MicroStrategry Inc.
+                </td>
+                <td>226331</td>
+                <td>8330000000</td>
+                <td>14060053580</td>
+                <td class="green">1.078%</td>
+              </tr>
+            </table>
+          </div>
+          <div class="parent hide" id="holders-loader">
+            <div class="loader">
+              <span class="loader-text">Loading</span>
+              <span class="load"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
